@@ -1,0 +1,3 @@
+#### Extracted from: C:\Program Files\Npcap\include\pcap\pcap.h
+
+--include-function pcap_lib_version # header: C:\Program Files\Npcap\include\pcap\pcap.h
