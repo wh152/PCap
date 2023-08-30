@@ -1,3 +1,19 @@
 #### Extracted from: C:\Program Files\Npcap\include\pcap\pcap.h
 
 --include-function pcap_lib_version # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-function pcap_findalldevs # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-function pcap_freealldevs # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct pcap_if            # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct pcap_addr          # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct sockaddr           # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct sockaddr_in        # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct in_addr            # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-union S_un                # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct S_un_b             # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-struct S_un_w             # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-typedef s_addr            # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-typedef s_host            # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-typedef s_net             # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-typedef s_imp             # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-typedef s_impno           # header: C:\Program Files\Npcap\include\pcap\pcap.h
+--include-typedef s_lh              # header: C:\Program Files\Npcap\include\pcap\pcap.h

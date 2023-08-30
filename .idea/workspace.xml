@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="839f682c-38cb-454e-9227-476dd551c0fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/wh152/PCapTest.java" afterDir="false" />
+    <list default="true" id="839f682c-38cb-454e-9227-476dd551c0fa" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/wh152/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/wh152/wrapper/InterfaceFlags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/wh152/wrapper/NetworkAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/wh152/wrapper/NetworkInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/wh152/wrapper/SocketAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/includes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/wh152/PCap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/wh152/PCap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/wh152/PCapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/wh152/PCapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -37,6 +40,9 @@
   <component name="MavenRunner">
     <option name="jreName" value="20" />
     <option name="vmOptions" value="--enable-preview --enable-native-access=ALL-UNNAMED" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -59,7 +65,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,14 +73,14 @@
       <recent name="C:\Users\Will\IntelliJ\PCap" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PCapTest.shouldReturnCorrectVersionString">
-    <configuration name="PCap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.wh152.PCap" />
+  <component name="RunManager" selected="Application.PCap">
+    <configuration name="Constants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.wh152.Constants" />
       <module name="PCap" />
       <option name="VM_PARAMETERS" value="--enable-preview --enable-native-access=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.wh152.*" />
+          <option name="PATTERN" value="com.github.wh152.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,17 +88,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PCapTest.shouldReturnCorrectVersionString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PCap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.wh152.PCap" />
+      <module name="PCap" />
+      <option name="VM_PARAMETERS" value="--enable-preview --enable-native-access=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.wh152.wrapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PCapTest.validateSocketIPAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PCap" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.wh152.*" />
+          <option name="PATTERN" value="com.github.wh152.wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.github.wh152" />
       <option name="MAIN_CLASS_NAME" value="com.github.wh152.PCapTest" />
-      <option name="METHOD_NAME" value="shouldReturnCorrectVersionString" />
+      <option name="METHOD_NAME" value="validateSocketIPAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="--enable-preview --enable-native-access=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PCapTest.validateSocketIPv4AddressFamily" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PCap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.wh152.wrapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.wh152" />
+      <option name="MAIN_CLASS_NAME" value="com.github.wh152.PCapTest" />
+      <option name="METHOD_NAME" value="validateSocketIPv4AddressFamily" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="--enable-preview --enable-native-access=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PCapTest.validateSocketIPv6AddressFamily" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PCap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.wh152.wrapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.wh152" />
+      <option name="MAIN_CLASS_NAME" value="com.github.wh152.PCapTest" />
+      <option name="METHOD_NAME" value="validateSocketIPv6AddressFamily" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="--enable-preview --enable-native-access=ALL-UNNAMED" />
       <method v="2">
@@ -100,13 +154,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Constants" />
       <item itemvalue="Application.PCap" />
-      <item itemvalue="JUnit.PCapTest.shouldReturnCorrectVersionString" />
+      <item itemvalue="JUnit.PCapTest.validateSocketIPAddress" />
+      <item itemvalue="JUnit.PCapTest.validateSocketIPv4AddressFamily" />
+      <item itemvalue="JUnit.PCapTest.validateSocketIPv6AddressFamily" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PCapTest.shouldReturnCorrectVersionString" />
         <item itemvalue="Application.PCap" />
+        <item itemvalue="Application.Constants" />
+        <item itemvalue="JUnit.PCapTest.validateSocketIPv6AddressFamily" />
+        <item itemvalue="JUnit.PCapTest.validateSocketIPAddress" />
+        <item itemvalue="JUnit.PCapTest.validateSocketIPv4AddressFamily" />
       </list>
     </recent_temporary>
   </component>
@@ -119,6 +179,15 @@
       <option name="presentableId" value="Default" />
       <updated>1692373797200</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1692442822055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692442822055</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +200,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="jdk.internal.foreign.MemorySessionImpl$1" memberName="this$0" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
